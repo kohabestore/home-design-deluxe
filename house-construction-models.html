@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        House Construction Models
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "House Construction Models",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/originals/fc/de/de/fcdedecff12b09e96fc8899f9f6a8de8.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=house+construction+models",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            House Construction Models
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>House Construction Models</strong>. This entity is associated with the vertical segments of smart homes smart cities industry and related IoT applications. Free Building Blender 3D models for download files in blend with low poly animated rigged game and VR options.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/15/59/8e/15598e4535d1d95278f375b3736267b8.jpg" alt="Pre Designed Models For House Construction From Contractors In The Philippines Concepthomebuilders Concrete House House House Styles" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu8xer-p5pkldsrfyNdc2_6NHEElpTPvk5KX-QTT-Rl-L7wbNhPNDJq9x5APmIOnyME0';">
+        <figcaption>Pre Designed Models For House Construction From Contractors In The Philippines Concepthomebuilders Concrete House House House Styles from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Building Information Modeling BIM is an intelligent 3D model-based process that gives architecture engineering and construction AEC professionals the insight and tools to more efficiently plan design construct and manage buildings and infrastructure. When our data is ready we will use itto train our model. Barns stables tractor shed grain elevator and silo equipment storage sheds.
+    </p>
+    <h3>Make a church stores fire station cinema apartment buildings and more.</h3>
+    <p>Building Information Modeling BIM is an intelligent 3D model-based process that gives architecture engineering and construction AEC professionals the insight and tools to more efficiently plan design construct and manage buildings and infrastructure. Browse thousands of house designs that present popular interior design elements including open concept floor plans in-law suites spa-like master baths mudrooms that are strategically placed next to entrances powder rooms and pantries and just about every bedroom configuration you can think of. Free Building Blender 3D models for download files in blend with low poly animated rigged game and VR options. Arandela Elegance Due Marfim Avant.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Luxury 3d Floor Plan Of Residential House 3d Model Max House Design Drawing House Design Games House Design" src="https://i.pinimg.com/736x/9e/d6/77/9ed6773dbf0eaf55482f2efb1ed217a4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCXLtMpw__JWSI3SnV7Sm0HBioqJn1tOeGYA3oyaSPUUbwJRDMA9-lugKmFykYwql35rs';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Free 3D Building models available for download.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="35 Desain Inspiratif Contoh Model Dinding Depan Rumah Minimalis Ala India 1000 Inspirasi Desa Desain Rumah Desa Desain Depan Rumah Desain Rumah Satu Lantai" src="https://i.pinimg.com/originals/fc/de/de/fcdedecff12b09e96fc8899f9f6a8de8.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDUStf8iiknxtBTPkulXrO2vLcw8XVqXg4kZowxGqEndQXdPuXD3VQxgFkYWoRx9VfVqQ';" />
+        <small>Source: in.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Make true-to-life and sturdy tunnel portals walls brick road rail bridges train station passenger overpass from cardboard.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Small Home Design Plan 9 4x8 2m With 4 Bedrooms Home Design With Plansearch Luxuryhomeinterio Beautiful House Plans House Construction Plan Model House Plan" src="https://i.pinimg.com/originals/95/d2/3b/95d23b88407c69807ae242ed4fe94067.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHPZos99Jcgf4dHb6jZPYJ-IsTK-sbmZJCDLCHce08gPIUHl0UJGCxVlVRK2pjyHMZsZE';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Building 3D models ready to view buy and download for free.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Contemporary Model Plans Bungalow House Floor Plans Contemporary House Design Small House Design Exterior" src="https://i.pinimg.com/originals/65/2d/cb/652dcb5dfa08332b1272329dcdd9584b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkYpQG08A2Wn0skiWaBT0xliXz7BE1Ouuw-JS9PDYeMtsXfqZoYobazVGxbqjEz8nEi_M';" />
+        <small>Source: in.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>LSTM models work great when making predictions based on time-series datasets.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="House Plans 6x11m With 5 Bedrooms Plot 8x16m House Construction Plan Duplex House Design Model House Plan" src="https://i.pinimg.com/originals/1a/f8/38/1af838762dbfc8c043541a2ffe6727fa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUioEUTYku_enSmPcpfTA1_6yX4yTr2zaRrm4yov3hK9UD50f3YN1P2vEPZna-k0BRQ1U';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>BIM is a 3-D object-oriented CAD approach for architects and engineers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pre Designed Models For House Construction From Contractors In The Philippines Concepthomebuilders Concrete House House House Styles" src="https://i.pinimg.com/originals/15/59/8e/15598e4535d1d95278f375b3736267b8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdu8xer-p5pkldsrfyNdc2_6NHEElpTPvk5KX-QTT-Rl-L7wbNhPNDJq9x5APmIOnyME0';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Make a church stores fire station cinema apartment buildings and more.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Sketchup Interior Design One Story House 8x10m House Description This House Have 2 Doors The First Main Door House Plans House Construction Plan House Design" src="https://i.pinimg.com/564x/b7/57/d9/b757d9671dc6a0528701008402276656.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQqpUzLB43HKOewzS4YXJPBg7WFDvRgStXfWSL0qVxuxEKhClG5mnrSilvHuO1d8C60z4';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>In creating building models you need to take attention to a few things.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="House Design Plans 3d 4 Bedrooms House Design Plans 3d 4 Bedrooms 2021 4 Bedroom Apartment House House Construction Plan Model House Plan Duplex House Plans" src="https://i.pinimg.com/736x/5b/d3/bc/5bd3bcb43c3ea701bbd9a09c0acc3e56.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTz13h_Uymf-VtBZ_3Ck2iFoFkzkMzg2eUvfsIsWRlw8twbrBA2RZcmmv9j6lMuhiopr4';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Barns stables tractor shed grain elevator and silo equipment storage sheds.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="House Plans 8x11m With 3 Bedrooms Sam House Plans Model House Plan House Construction Plan Two Story House Design" src="https://i.pinimg.com/originals/c3/8f/ae/c38fae687ba0c7a2d114cd0c65a0dc3e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRIPbYSb07xgMiOXDcQvKMe8x_BS1PDqVqKHNnmUFQViXNgI0R4u0Q-fkM6LBmBAXfKd8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Free Building 3D models.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/design-your-own-home-extension.html"><i>&larr; design your own home extension</i></a>
+                                                                    
+                                        <a href="/design-your-own-tiny-home-on-wheels.html"><i>design your own tiny home on wheels &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

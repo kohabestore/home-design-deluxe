@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Installing Plumbing
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Installing Plumbing",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/600x315/00/0d/43/000d43a84e0018a8515c41de4ddbf9e3.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=installing+plumbing",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Installing Plumbing
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Installing Plumbing</strong>. Theyll add fixtures for washer and dryer hookups a cold water line for your fridge and outdoor fixtures for your hose. Local codes determine standard.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/8c/a7/9c/8ca79ca78f0fe39b94a6fa5eddd30d58.jpg" alt="Hooking Up A Shower Or Tub Faucet Shower Plumbing Diy Plumbing Plumbing Installation" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5yQ0WiSgI0O3KuCBRVBwP0PMa9pLKH5R2KjAIp7p-dCzxv0EdPnc8uzufS0oHmLjl3s';">
+        <figcaption>Hooking Up A Shower Or Tub Faucet Shower Plumbing Diy Plumbing Plumbing Installation from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Ad Search Installing Plumbing. Installing new plumbing or repiping an entire home costs 2000 to 15000. 4262020 Thus you can enhance the functionality and value of your work shed by installing plumbing.
+    </p>
+    <h3>Although this stage is quite straightforward youll probably need an extra pair of hands to align the shower drain over the drain pipe.</h3>
+    <p>Ad Search Installing Plumbing. Learn More About Plumbing Installation. Theyll add fixtures for washer and dryer hookups a cold water line for your fridge and outdoor fixtures for your hose. Ad Search Installing Plumbing.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Basics For Installing Plumbing Rough In For New Homes Plumbing Drawing Plumbing Diy Plumbing" src="https://i.pinimg.com/originals/78/cd/cf/78cdcf694492645bf7948c19ab67fd66.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8_SAuwOn5ao85mHlxY_ntBDrBC0HiijY8AGE8LFma6g9Mp388aVfwSBjs15ODv6fxltE';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>2112021 Installing the Shower Drain Youll need to connect the shower drain to the drain pipes with nuts.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Bathroom Remodeling" src="https://i.pinimg.com/originals/fe/40/22/fe4022a738429fbf30901dac84c8fb85.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbGNOWjpxQPukpV-ffxz9xgNdVUgYfJc-UAJGCN93mPu1Ma-ZCGy-QZI8CPcxpjOtsjPc';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Local codes determine standard.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Drain And Vent Lines Are Important Aspects Of Your Home S Sewer System We Ll Show You Why They Matter And How To Install Toilet Drain Toilet Vent Pex Plumbing" src="https://i.pinimg.com/600x315/00/0d/43/000d43a84e0018a8515c41de4ddbf9e3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGcfUFnT3iMUgev3xdvE0Rs-M6BZ6jXlGwPIfHf7ShgfkheswbPCiXDcNrAo8rsFjbvsg';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Theyll add fixtures for washer and dryer hookups a cold water line for your fridge and outdoor fixtures for your hose.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="New Indoor Plumbing Bathroom Plumbing Plumbing Installation Diy Plumbing" src="https://i.pinimg.com/originals/f9/18/55/f91855eb83c7b0f249461862e19ce296.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDoIvOl4IvF6_04LcSGKE-UKnsuw2JstBZMlQcPIhlGE6JWzUZcpDUNz5zoAVOYR5EDn4';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>4262020 Thus you can enhance the functionality and value of your work shed by installing plumbing.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bathtub Plumbing Installation Drain Diagrams Plumbing Installation Bathtub Plumbing Bathroom Repair" src="https://i.pinimg.com/originals/12/0c/c3/120cc32292aa417cd119d740ab20eb75.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2MgP5Msupy_-ZAgkrkZA58lNN9JR7xEnYPjcT8u9-5NZ3aGyJBTb-fo9Vemf9aFyMtzc';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>However the difficulty level of the entire process will also depend on the role of plumbing and its installation location in the shed.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Plumbing A Bathtub Running Drain And Vent Lines How To Install A New Bathroom Bathtub Plumbing Installi Bathroom Plumbing Bathtub Plumbing Residential Plumbing" src="https://i.pinimg.com/474x/06/68/73/066873f6edff75e0bf4f6b3a194d4c3a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVMMgqQVx-1K4HqqvcH62zxjMIgKB2BZghZ3awPwb903hswiRuaRIR76QOOtTBdOsOIIU';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>However the difficulty level of the entire process will also depend on the role of plumbing and its installation location in the shed.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="House Plumbing Plumbing Installation Plumbing Problems Diy Plumbing" src="https://i.pinimg.com/originals/35/ee/c2/35eec20f2f1b460d561e5ede2d4de6bb.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTm0vXuX2gONT6hrH4y7D3dsmOgfUisjOT-TT4-PsgIJh2bPYMoffItwAU7kHOpw3z708';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>2112021 Installing the Shower Drain Youll need to connect the shower drain to the drain pipes with nuts.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Plumbing Diagram" src="https://i.pinimg.com/originals/79/16/2d/79162df456e5b1b4f893fc7e7761a525.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxqjx1mJx5QGnqOUiLXs1S_2vlL9vBp7-r8-TVGwDwTMQ2C4ZflFopo4bi_KywwtvCwPc';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>If plumbing installation is done the right way itll be a successful and relatively easy process.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Install A New Bathtub For Dummies Bathtub Plumbing Easy Bathroom Organization Diy Plumbing" src="https://i.pinimg.com/originals/23/53/a3/2353a33d2c98ac522369aad57019a6fe.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzYZklrzlxuqb6A8bRvirJ7NVJHuEHoPevHVVc88oNwGpUaxGGKzPoEVbuUFxwLoO0h4U';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>2182021 Proper plumbing installation also should incorporate vent pipes which essentially replace air that is discharged every time water flows from a plumbing fixture into a drain pipe.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/tomato-plants.html"><i>&larr; tomato plants</i></a>
+                                                                    
+                                        <a href="/tips-to-decorate-home.html"><i>tips to decorate home &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

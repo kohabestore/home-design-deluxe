@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home Space Planning Design Tool App
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Home Space Planning Design Tool App",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/736x/cf/08/b4/cf08b4e9f2ed5fd83f8e950bf34edb1f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=home+space+planning+design+tool+app",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Home Space Planning Design Tool App
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Home Space Planning Design Tool App</strong>. We are already at an Extreme Frenzy market in Snohomish County. - Visualize your dream home and get a better idea of what it will really look like - Enrich your place.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/59/02/fe/5902fe00c89caed8073b856dd64ea8be.jpg" alt="Space Planning App Have You Ever Been Out Window Shopping When You Spot The Perf Interior Design Apps Best Interior Design Websites Best Interior Design Apps" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNY9QmJqhrXDVfORfdDJ5saN929Sz1WN_bw_alNinF3zfswNJirBQzcCYujmOFyyvRRE';">
+        <figcaption>Space Planning App Have You Ever Been Out Window Shopping When You Spot The Perf Interior Design Apps Best Interior Design Websites Best Interior Design Apps from co.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Unlock the potential of your team with Jira. With SmartDraw you begin with the space planning template you neednot just a blank canvas. SmartDraw provides professionally-designed themes and high quality symbols for.
+    </p>
+    <h3>Create a floor plan of your office try different layouts and visualize different finish and furnishings options all in one easy-to-use app.</h3>
+    <p>See screenshots read the latest customer reviews and compare ratings for Planner 5D - Home. Starting at only 7. The RoomSketcher App is an easy-to-use floor plan and 3D design app that you can use as an office planner. Search results for.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Maison Plan Plan Virtuelle Maison Gratuit Plan Maison Virtuel Home Design Software Best Home Design Software Floor Plans Online" src="https://i.pinimg.com/originals/53/df/a2/53dfa2be16fefc7025425017b49377fc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtcl6Mr8r4_C-LM7861jTIrdfE6f6Ci6CkkUt6KcrhPYsW_PaGKD4Y3puF_F47L9LFiY';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The RoomSketcher App is an easy-to-use floor plan and 3D design app that you can use as an office planner.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Moving Company Quotes Tips To Plan Your Move Mymove Ikea Room Planner Room Planner Room Layout Planner" src="https://i.pinimg.com/originals/6e/98/cf/6e98cf72640f6eadec007615e0de7f4a.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQU0SvvYo_0JK1R5VjrgwUEH0njXU9jO-LxeGYVl7rOhdzSrFpoTpP2cCMgdVvdEmB0Ec';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Planner 5D bills itself as the most extensive free room design app on the market.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The 10 Best Apps For Planning A Room Layout And Design Room Layout Design Room Layout Floor Plan App" src="https://i.pinimg.com/originals/b7/59/58/b75958bfe5e3a84384b742b33ea0ec3f.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB21TsJxLnFCS1D9aAWNo4wh8AkZzgHDsupKVN1zQWXfY-VmXdHL8zMzuc9VPonHEJ6rk';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Unlock the potential of your team with Jira.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ikea Home Planner File Extensions Ikea Home Planner File Extensions Room Designer Online Room Layout Planner Home Design Software" src="https://i.pinimg.com/originals/f6/91/e1/f691e1298e39ac989566a2af8283b573.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJkst_tqvsjXXbIFQWr3XRu9SGeh21s4p_uk8UWYJSQY93DysYK1pEvfVcAvaKt96P_TA';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The products and services presented on the HomeByMe website are not sold by Dassault Systmes SE.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Download Floor Plan Creator 2 7 3 House Plan App Floor Plan App Floor Plan Creator" src="https://i.pinimg.com/originals/f7/57/4f/f7574f64c3b92312b4617767098d625c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9LQzgH-z5Wp8AmNpSGMQv71OIl7cDC0IdpEh252YyFs4HHyhXyGFt8P0F3d9RLHeeZiw';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Upload floor plan.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Home Design Apps That Ll Make You Feel Like An Interior Designer Interior Design Apps Interior Design Games Design Your Own Home" src="https://i.pinimg.com/originals/00/41/27/00412731868cddcee0a1ad055cf789f4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScSMhCXqMItaN2AZ68PgJ7SEbQkWQLtQyQczi8cu8Ek2L7RQq2D-O3fWtmquomT-qzShI';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>We are already at an Extreme Frenzy market in Snohomish County.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Free Online Design A Room Floor Planner Room Layout Planner Online Home Design" src="https://i.pinimg.com/736x/4f/84/48/4f8448060b24d9a38f0c85e7b8751813.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1fdsqsTEzM3U8sJomHNSGiMYgV9LxRAyxI8QL74SR8mLvT88GLPDqX_a0n-YsDiMEEzs';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Use the 2D mode to create floor plans and design layouts with furniture and other home items or switch to 3D to explore and edit your design from any angle.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Space Planning App Have You Ever Been Out Window Shopping When You Spot The Perf Interior Design Apps Best Interior Design Websites Best Interior Design Apps" src="https://i.pinimg.com/originals/59/02/fe/5902fe00c89caed8073b856dd64ea8be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNY9QmJqhrXDVfORfdDJ5saN929Sz1WN_bw_alNinF3zfswNJirBQzcCYujmOFyyvRRE';" />
+        <small>Source: co.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>- Visualize your dream home and get a better idea of what it will really look like - Enrich your place.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Floor Plan Maker Architecture Software Free Download Online App 3d Architecture Home Design Software M House Plan Maker Floor Plan Drawing Floor Plan Creator" src="https://i.pinimg.com/originals/51/45/9d/51459d593221cde881cbd4418dfebd38.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8hIV0pGwpb58rGppfP4rFd1cdjRVPVRscOgMW9PSbuqQne3wFC-pbA0STObkZWqH1giY';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>With SmartDraw you begin with the space planning template you neednot just a blank canvas.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/house-plans-with-porch.html"><i>&larr; house plans with porch</i></a>
+                                                                    
+                                        <a href="/house-plans-with-daylight-basements.html"><i>house plans with daylight basements &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

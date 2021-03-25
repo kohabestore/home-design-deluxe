@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Simple Garden
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Simple Garden",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/originals/aa/5f/0b/aa5f0b1ca9aa888a1039ae42a07e2af9.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=simple+garden",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Simple Garden
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Simple Garden</strong>. All tomatoes need is a good amount of sunlight and decent support when the fruit begins to form. Simple Garden Life Episodes.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/29/01/b9/2901b91a5736540e2f3f0223228bc3a4.jpg" alt="10 Lovely Flower Garden Ideas For Backyard Simple Gardening Garden Gardendesign Modernlandsca Diy Backyard Landscaping Unique Gardens Backyard Landscaping" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdQwtKSllgys5mrLuZKgHGCLE2GM-Bj8V7VqJiLcNhUQYkZAoV3odE6ithKQ3erE2pW3c';">
+        <figcaption>10 Lovely Flower Garden Ideas For Backyard Simple Gardening Garden Gardendesign Modernlandsca Diy Backyard Landscaping Unique Gardens Backyard Landscaping from hu.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Container gardens provide a simple solution for limited in-ground growing. 15 Natural Deodorants That Actually Work. Get Results from 6 Engines at Once.
+    </p>
+    <h3>1172020 Spruce up your garden with these cheap and easy DIY garden ideas.</h3>
+    <p>Use some terracotta pots to put your flowers. Ad Search Maintenance Landscaping. Easy To Grow Tomatoes. Oval or elliptical shapes that can sit closer to a wall or railing.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Simple Garden Plant Small Backyard Gardens Backyard Garden Design Garden Design Plans" src="https://i.pinimg.com/originals/33/b9/39/33b939c01bb7574fd9c209d6ea1a0cf8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjondaHvztyIEfDVshOkXObMQMS9w0hyrTKL4hiU1257D0vh_YowFI3P8WjqTuJ-XXbJ0';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>However consideration should be given to their size and shape.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Simple Garden Design Philippines Simple Garden Designs Garden" src="https://i.pinimg.com/originals/f8/7b/b3/f87bb365d3092ac5f460e3a9918e3acf.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCuNFBlMgXuMYEdZhPHlKPxMTFi5DDwVeulmqoie8qb9k4AXwjEfpjN_Q4cSo2lpmdQUk';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>5142020 Container gardening is a really easy way to get your garden looking beautiful with blooming flowers and its especially ideal for patios and balconies.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Landscaping Ideas Next To Fence Google Search Simple Garden Designs Garden Landscape Design Garden Layout" src="https://i.pinimg.com/originals/1c/c6/cc/1cc6cc2717d94bcdf8ff1118bf9fbacc.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRiw4lWE3mb_-eIHP2EQISxrmQieEKpzqEuPbe5zV7BluCU5UgOds_bF1ewogJt64RPQ8';" />
+        <small>Source: nl.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Then deck your entryway patio out through another significantly more unique option.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="My New Build Simple Garden Simple Garden Designs New Build Garden Ideas Back Garden Design" src="https://i.pinimg.com/originals/de/3a/9b/de3a9b9c44706b832306bbc004aae507.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUgWRJB1Rsq7xGd4HG485kIzljqYzwI7-n2t_ntCyd1awofNXSNnaQGlBpELNfnuYE5sg';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Get Results from 6 Engines at Once.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Simple Garden Decorating Ideas Simple House India Home Decor Garden Decor" src="https://i.pinimg.com/originals/bb/4a/9a/bb4a9ae628afe5892928ea4c71c5203d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEu3oOAPTyIYyK65JLfdUz-rbEu-t_OPDj1FUZuF8b3uVBo50HbwaSuUEp69K0EMj9MU8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Simple Garden Life Episodes.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Exalted Minimalist Home Bedroom Ideas Minimalist Garden Simple Garden Designs Backyard Garden Design" src="https://i.pinimg.com/originals/aa/5f/0b/aa5f0b1ca9aa888a1039ae42a07e2af9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnVAXk6KnH93fPXRxTKsdX2GQuKVhgWzr7XmtnRqTdUf_ntyfMv7pvdLRU-ZQIsXby7GE';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Ad Supplies Made to Order from Worlds Largest Supplier Base.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Bit Self Help Guide To A Lovely Garden Simple Garden Ideas Minimalist Garden Garden Design Interior Garden" src="https://i.pinimg.com/736x/ff/66/cc/ff66cc81aade51cce29258819d56ff07.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROKG9lRDNJg1rsq_YgySMv1hZjJmEtikQWKBNRF8-f17Sp0AlPL1-CPmoAqUCkHMSo3Ac';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>From DIY planters and container gardening ideas to raised garden beds and garden tool storage ideas theres a garden project here for everyone whether you are a beginner or an advanced gardener.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Resting Area Outdoor Gardens Design Backyard Garden Design Backyard Landscaping Designs" src="https://i.pinimg.com/474x/25/56/0f/25560f2e6c2c75eded7f46daa07905d5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdDjfJHDcCO5a5y0_0nZ32tOMimM9DajxPKPuCpfnHyVNn26Sv-ZweHpdt_ELNMCsvcBc';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Ad Search Maintenance Landscaping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="7 Different Ways To Design A Simple Garden Walkway Dream Backyards Don T Come Together All At Once It Takes Year Unique Gardens Garden Walkway Walkway Design" src="https://i.pinimg.com/564x/51/1e/23/511e2304fb5f15cefbb1b9af43036d8c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIR7rqmq1xD5vXtP6aSRbnzsK_u69ivCGffX_bgcH98TBeAqxXDasAGveVEh-_a3LN8VM';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Then deck your entryway patio out through another significantly more unique option.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/home-design-decor-review.html"><i>&larr; home design decor review</i></a>
+                                                                    
+                                        <a href="/home-design-decor-shopping-contextlogic-inc.html"><i>home design decor shopping contextlogic inc &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

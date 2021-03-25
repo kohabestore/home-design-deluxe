@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Home Network Design Proposal
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Home Network Design Proposal",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/736x/05/4e/5b/054e5b982747579dde4496a8bfd1ac79.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=home+network+design+proposal",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Home Network Design Proposal
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Home Network Design Proposal</strong>. Network design and deployment for a small office home office need. For the faculty members and the students this kind of cluster software will look like a single system.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/b1/d7/e2/b1d7e2a4264ca01ce1ecda17c3bef7c5.jpg" alt="Cisco Network Diagram Visio Network Diagram Networking Computer Network" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgU3gCUp_B8PwIKFU0fWJF5R2ep-hR58xtYz8WHanA5BSAvpuAad61o48ZRXk6SdTulLM';">
+        <figcaption>Cisco Network Diagram Visio Network Diagram Networking Computer Network from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        By refining the logical network diagram generated previously a preliminary physical design is created which will include a quick overview exact configurations manufacturer brand names SKUs and a short description of each hardware device implemented into the system. Router The packet forwarding networking device chosen for this proposal is the Asus RT-AC88U Wireless AC3100. Ad Easy to follow guide on how to wire your home network.
+    </p>
+    <h3>Your task is to design the network for this new building with the following criteria.</h3>
+    <p>A network design proposal for home. The design was first simulated using Cisco Packet Tracer software and WireShark protocol analyser. INTRODUCTIONThe increasing demand for high performance network ie. Ad Easy to follow guide on how to wire your home network.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="22 References Of Uml Network Diagram Examples Design Http Bookingritzcarlton Info 22 References Of Uml Network Diagram Design Visio Network Diagram Diagram" src="https://i.pinimg.com/originals/47/0e/5a/470e5a769ab0e3c99e4f052bd3a12fcf.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw6s2B_zs75HTpNE4PlnfelTwfuFbuzsckBYc5wAM9bFYJQPKqVa6hDAYYNyCcbs5YF6g';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Network design Proposal This section of the website consists of Network design proposal.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cctv Network Free Cctv Network Templates Templates Project Proposal Template Networking" src="https://i.pinimg.com/originals/f9/ef/5c/f9ef5cacc90a7b1aa9036e09e629c312.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDdY_RpiZAtZVI4TQpccB-FT-gV-zNdhLsel0A8MB5YckT_uBwyqyhCe0oDPJT20kCSAY';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Explanation of the DesignIn the above design all desktop computers and one of the routers Fast Ethernet ports were connected to the switch a 16-port Linksys Switch To ensure security of the network a WPA passphrase was used which is more secured than its counterpart WEP 6For the physical cabling the cables were passed through the ceiling to the HODs and his Secretarys.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gallery Of Museum Of Nature And Science Winning Proposal Schwartz Besnosoff So Architecture 20 Diagram Architecture Nature Museum Architecture Panel" src="https://i.pinimg.com/originals/7c/b5/a0/7cb5a022bcee5c7e3bac6d8aeda650db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQakp8APHDJ9JD6PsohPFil1kWwRSkZlL-YUZ_gG5hoBEDIKJg5K62rKLDaPMtfY6jBlek';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Ad Easy to follow guide on how to wire your home network.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="24 Network Design Diagram Samples Http Bookingritzcarlton Info 24 Network Design Diagram Samples Diagram Design Networking Diagram" src="https://i.pinimg.com/originals/6a/41/65/6a41652e734650c8482c783cf8590613.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBmO3wXBKuzamrsuJtSq7VUijDj_DBa_DeCGk7CoGe11w_sH2D8E0OOu6rbyZeoC6UMIo';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Ad Easy to follow guide on how to wire your home network.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gallery Of Home Network Diagrams Home Network Wired Router Router" src="https://i.pinimg.com/originals/fe/7b/4b/fe7b4b5187aa871183b7a74a88de0c84.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAH39hNZxO946ImYxiUTiWqaPhta79_qGfkyEZ5PUYRmL7UzTzjG4SF0kxpn0XgNTIT7Q';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>It presented the steps or phases of a structured network design and demonstrated a practical implementation of the steps using a real-life case study.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Building Small Office Network Part1 Network Design Small Business Network Small Office Project Proposal" src="https://i.pinimg.com/originals/92/94/5d/92945d455ac7c6f6154a578c60b4fe3f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDHwDjrI2Y_ClJ2n34mfU9HOxcpTJ_DTw21nXBP8WY4Rxi_T2_FzbIJFn0uPMnLRKRkE';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Ive got two desktops three laptops five phonesPMPs a printer an XBOX 360 and a Wii to keep track of.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="17 Awesome Network Diagram Examples For You Bookingritzcarlton Info Diagram Design Diagram Computer Network" src="https://i.pinimg.com/originals/f4/5a/6b/f45a6b11162cf8ce591a1f7ec20892a5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc8XcBd83srTsceBROwNEWHDjPPYI6VL3vg6czBBGP8hGJjFV3zzBSWqn_r46nlxpuCAY';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Of course when we have guests over I want to make their setup as painless as possible.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="27 Good Standard Network Diagram Symbols Design Ideas Http Bookingritzcarlton Info 27 Good Standard Network Visio Network Diagram Diagram Design Networking" src="https://i.pinimg.com/originals/fa/47/67/fa4767298175d8a3811334a50689b780.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAd6T6y4aH9FrlF9V8rTXkRc4aO5BgpKd5zuG47NBYQTnnSBRAcOXbNzGvE0iInK2M4uM';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Once connected open up an internet browser and proceed to the default IP address for the router.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="24 Network Design Diagram Samples Http Bookingritzcarlton Info 24 Network Design Diagram Samples Diagram Design Networking Computer Network" src="https://i.pinimg.com/originals/e4/2d/51/e42d51e0db235adb4d151b84dbcb810b.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGD-XLo4z4_erYymMMsCpPrF3TAAgMMdx1nTnxYLMl3ZklBm0criDpaXtDFITmekzamy8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Mardy McGaw Gretchen Hall Lesile Morgan for IDT 688 Network Design offered by Philadelphia University at IU13 Clipart from Microsoft Office 2007.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/decorators-home-outlet.html"><i>&larr; decorators home outlet</i></a>
+                                                                    
+                                        <a href="/decorative-wreaths-for-the-home.html"><i>decorative wreaths for the home &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

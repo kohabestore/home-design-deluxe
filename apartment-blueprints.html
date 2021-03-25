@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Apartment Blueprints
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Apartment Blueprints",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/originals/b2/b5/3a/b2b53a6cc68d1e664122f1e62ba673d2.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=apartment+blueprints",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Apartment Blueprints
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Apartment Blueprints</strong>. Verify with local State code requirements in your area. Our collection features one- to three-story plans with up to four bedrooms per unit and they meet the same essential requirements that all homeowners want.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/f5/cc/6f/f5cc6f713f23951962d9e6e0fe717936.jpg" alt="Studio Apartment Floorplans Find House Plans Studio Floor Plans Studio Apartment Floor Plans Small Apartment Plans" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD_XxEojt2giVUHSPnSkWe-5c81k9Fvwjd1_r-l4MugnjFHcrZmLiMGl8QrxX17eod_Gg';">
+        <figcaption>Studio Apartment Floorplans Find House Plans Studio Floor Plans Studio Apartment Floor Plans Small Apartment Plans from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Verify with local State code requirements in your area. All four unit Apartment Flat designs will comply with ADA requirements on the lower units only. The micro apartment offers a proposal for future high-density urban living for one person families the fastest growing demographic.
+    </p>
+    <h3>These plans were produced based on high demand and offer efficient construction costs to maximize your return on investment.</h3>
+    <p>Good day now I want to share about 4 storey apartment building design. Apartment plans 8 unit apartment J891-8 2 bedroom duplex J0324d Triplex. 6112017 Inspired from 2000s housing projects built in various Asian cities a variety of apartment plans from 1-bedroom to 4-bedroom units 50 sq m 550 sq ft to 130 sq m 1400 sq ft with kitchens facing inside are paired in wings linked with a central core staircase and lifts by bridge-corridors. 162021 No matter what style suits you these garage apartment plans offer a smart way to add value to your property.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Philippines Tiny Apartments Apartment Floor Plans Apartment Plans Floor Plan Design" src="https://i.pinimg.com/originals/d5/09/7b/d5097b936024171a17825545d62e33f5.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT80Rktlp5ZouKaU0DDRW8ErhaeRcw-C7cpRoX7KrjZDh0bLt4ewzEXmntS4I3suNrah_k';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>1-800-913-2350 Call us at 1-800-913-2350.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Apartment Building Plans Location Aksaray Turkey New Residential Apartment Building Plans Apartment Building Small Apartment Building Building Concept" src="https://i.pinimg.com/originals/b2/b5/3a/b2b53a6cc68d1e664122f1e62ba673d2.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8fNCmPBCGRfDHRtbI-4erpY-npL9nDz7gPxjAjoZY8CBMoboVlq7JbdXzimGFgon2xX4';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Our collection features one- to three-story plans with up to four bedrooms per unit and they meet the same essential requirements that all homeowners want.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Phoenix Manor Apartments Unit A Studio Apartment Blueprints Studio Apartment Floor Plans House Furniture Design" src="https://i.pinimg.com/originals/58/8e/95/588e95efb4cbb9d0f78e81e74a7e171d.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXNSjG_sKIes2Ek6MsduJbajPOOV8JXJBOx1rhi0gd5zS0iBKocLKfuxbCw4XQk4AgbVw';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>In most cases we can add units to our plans to achieve a larger building should you need something with more apartment unitsat no additional charge.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="6 Storey Building Plan Apartment Blueprints Two Story House Plans Autocad Drawing Of Design Pdf M House Plans Australia Two Story House Plans House Floor Plans" src="https://i.pinimg.com/originals/7b/2a/1a/7b2a1abea013c178ecd3680383e71183.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2bcXzDhOaj5nzUbVvVGCvzEqyWEWSNokEYiL1PvqBbfwAtpLNOheLfKFptXxOZCHZ6o';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>12212017 Stylish studio apartment floor plans ideas 41 Many styles even arrive in a myriad of colours so you can select your favourite wall decal style to satisfy your room total color scheme.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="25 Small Bedroom Ideas For Maximizing Space And Style Studio Apartment Floor Plans Studio Floor Plans Small Apartment Plans" src="https://i.pinimg.com/originals/00/44/e7/0044e7a71d959a98a7f62295b590a82f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzV8HZcF6PBrqD30_jSNiI57nJqU3FKOuIz2yZxNWXHbrccnS5VNdMh7T-nTJG67_Nfok';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Please call us if you would like to have additional units added or deleted from the plans you are interested in.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Studio Apartment Plan And Layout Design With Storage Studio Apartment Plan Studio Apartment Floor Plans Small Apartment Plans" src="https://i.pinimg.com/originals/d9/f3/4f/d9f34fc768fca081c3bb50b0dc42126b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_MsPECUiEky5hhxqlsY-wh1nUHypZnkbRoyynLxkYkib474fU6EfknNBpPnGiYprPtB8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>View our list of amenities to learn more about what we offer at the best apartments in Madison WI.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Springvale Terrace Apartment Floor Plans Small Apartment Floor Plans One Bedroom Apartment" src="https://i.pinimg.com/originals/ef/0a/e3/ef0ae3d86e1a39eb766221a59e62e794.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsd8Xqx6OBlUPidrwBztK_afyqPNxLZCjnnnm1fVj9I6lGTa64DT3quFY6K8sD2YjTiE';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>11202018 This 27sqm studio apartment is located in Sydney.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pine Crest Village Floor Plans Studio Apartment Floor Plans Studio Floor Plans Studio Apartment Layout" src="https://i.pinimg.com/originals/c9/e6/a8/c9e6a8dd147c112a5a8fba243bb69392.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDwZGVmVikJ4WXVAP-XJj8VKQzbZfizdcVWNp4ZHDAvi2YRre_HgKBybc6m7XcQrMdtV8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Good day now I want to share about 4 storey apartment building design.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Awesome 3d Plans For Apartments Pesquisa Google Apartment Floor Plans 2 Bedroom Apartment Floor Plan Sims House Plans" src="https://i.pinimg.com/originals/4a/38/8c/4a388ccebe094c1589688be9af86a9be.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStspEHBSrZ-2WJaAjW2YcRb31FSkXRg3kTw63ll7sbv-leZ6ct4UVyPly2o1MCFRcA7KQ';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Welcome to part 2 of our Awesome 3D HouseApartment Plans where you can see another 20 amazing 3D perspectives of what is best in interior design and architecture today.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/garden-idea.html"><i>&larr; garden idea</i></a>
+                                                                    
+                                        <a href="/garden-shrubs.html"><i>garden shrubs &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

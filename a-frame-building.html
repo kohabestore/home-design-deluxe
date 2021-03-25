@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        A Frame Building
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "A Frame Building",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/originals/98/d6/c7/98d6c7c94104ee0f18f46602ccf70e7f.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=a+frame+building",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            A Frame Building
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>A Frame Building</strong>. Get Instant Quality Results Now. Ad Get Steel Buildings.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/a6/58/f8/a658f8f65085396d4333d2b67249abcf.jpg" alt="Pin On Modern Cabins" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTISznG-YI3Zhl906FDM16rn9VNeYsvx5L1g5k5BF9IkBM135IJGhcQ0fRz0kXllNwCeCk';">
+        <figcaption>Pin On Modern Cabins from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Get Results from 6 Engines at Once. 4152020 At Field Mag we love a good A-FrameWhether nestled into a snowy hillside in British Columbia or amid a National Park in Chile the simplicity is inspiring and the functionality undeniableMuch like Andrew Szeto and his sub 10k A-Frame build in Quebec we found Heather Scott and her custom A-Frame in Cornwall England on InstagramYes that app is rotting our. Picture opening the A-Frame and seeing only the frames inside.
+    </p>
+    <h3>Ad Separation is required.</h3>
+    <p>Get Results from 6 Engines at Once. Ad Search Post Frame Buildings Prices. Ad Separation is required. Dont use one of the oscillating pad sanders as it will scrape against the grain.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Obraznyj Dom A Frame Dom Shalash Aframeinterior A Frame House Triangle House House In The Woods" src="https://i.pinimg.com/564x/fc/1a/9d/fc1a9da86634adec29db4af5055e39cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbAgPEZE3yr8eGK57psM30RUM9GTuHAPg7DD41QiowkJG4m3lcu9sbkVjC1aMpCTaaiQ8';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Build an A-Frame Trellis.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="We Visited A Three Story Big A Frame The Fall Sunset Shined At The Big Roof And It Was So Beautiful There A Frame House Plans Building A House A Frame House" src="https://i.pinimg.com/originals/98/d6/c7/98d6c7c94104ee0f18f46602ccf70e7f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQRGX343G6oFT3g9-pdeLlCsp2ttgPXGMeADEkCRoQYRLTIMFNuWPDy7iOvb-2wByPqqc';" />
+        <small>Source: br.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Get Instant Quality Results Now.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Uo Journal How To Build An A Frame Cabin Building A Shed A Frame Cabin A Frame House" src="https://i.pinimg.com/originals/f1/c9/9a/f1c99a5de0abe23ca9bad696d4606008.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSObP9wk_DNeRUVnw2LqJFo2eHV_4tqDkyyhtgfDwd-LkO4yJGrfwrx4kizyXGX5bXJHHE';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Picture opening the A-Frame and seeing only the frames inside.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Shed Plans Build An A Frame Cabin These Instructions For This Small A Frame Mean Much More Than Just A Place T Small House Movement A Frame Cabin Diy Cabin" src="https://i.pinimg.com/originals/96/1e/48/961e4890b47b16fc6b5fdde07dd0e28f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa-yAoQEIwGVpjBTGbE2YNEFQ9iJK021TqRGOjNeh5XlPWGHGkd7QgErG5a9iXge8wVx0';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Step 2 Shim a gap between the top of the A-Frame.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Floor Plan For My A Frame Cabin A Frame House Plans A Frame Cabin Plans Cabin Floor Plans" src="https://i.pinimg.com/originals/f6/94/59/f6945961a70636e1c6df78780feb3d45.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7oHeOyB3D5oquL3Qvv7bu2Rq-dEM9pudrhjw-SJGR7TI9jUzNMMW0n4wcZCvwHFKJYCc';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>On paper it certainly seems to be a simple task.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Build A Tiny House Part 4 Building The Frame Building A Tiny House A Frame House A Frame Cabin" src="https://i.pinimg.com/originals/a6/70/cc/a670cceaa08da80f6baa1630308a7cb8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXKZNMyKqhND2zRCaXOOmv4D8lkdHKxovQy6qUg54MHsufD06jzJgP_cm3-UmRp6wPr4o';" />
+        <small>Source: pt.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>4152020 At Field Mag we love a good A-FrameWhether nestled into a snowy hillside in British Columbia or amid a National Park in Chile the simplicity is inspiring and the functionality undeniableMuch like Andrew Szeto and his sub 10k A-Frame build in Quebec we found Heather Scott and her custom A-Frame in Cornwall England on InstagramYes that app is rotting our.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Jim P On A Frame House Architecture House House Architecture Styles Alpine House" src="https://i.pinimg.com/564x/fe/7b/be/fe7bbe8fda0b09d36735ac0e141dc9e5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn0zhBXbVGWvdXGrig6UQYQRTVvSS5fuskXhmSFlbM2QVRdu9nNDuaVYWRwhO95ZURzpE';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Timber-framed or half-timbered houses were common in medieval Europe.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Small A Frame House In Romanian Carpathia Part 1 Small Wooden House Plans Micro Homes Floor Plans Cabin Plans A Frame House Building A Wooden House Small Wooden House" src="https://i.pinimg.com/originals/c4/9e/75/c49e751a96511b2e08374ddcc00ab529.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2BgHzJurhX1lLrEFVavL6UHqD1eP-tGCPQ6S424NFHByp95MNsHQqYe8egcP4B2DTck';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Ad Search Post Frame Buildings Prices.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Build An A Frame Mother Earth News A Frame Cabin Plans A Frame House Plans A Frame House" src="https://i.pinimg.com/originals/ae/1d/2a/ae1d2ab9c888161cb3d0893c69724347.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZ-YQP-T6lARuA_egxpMs4ZzyqP2lXctvZB7GjtHwEXz9K1Y4yinSEsVw-yU9BebZmOk';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>10172019 Ottowa-based woodworker Andrew Szeto shows how he built an A-Frame for just 8000 with lessons learned video and instructions Lessons learned and a step by step video prove anyone can build the cabin of their dreams with hard work and good friends.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/wholesale-fleur-de-lis-home-decor.html"><i>&larr; wholesale fleur de lis home decor</i></a>
+                                                                    
+                                        <a href="/wholesale-home-decor-for-retailers.html"><i>wholesale home decor for retailers &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Build Your Own A Frame House
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Build Your Own A Frame House",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/originals/0a/da/0d/0ada0d877f8beae25dcbb2fd0a768dca.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=build+your+own+a+frame+house",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Build Your Own A Frame House
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Build Your Own A Frame House</strong>. Plus this is a labor of love something Ive wanted to do forever. 10172019 How long did the build take.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/95/fe/b6/95feb6cfbf3c32e74efb4f5018210230.jpg" alt="Build Your Own Beautiful And Sleek Flat Pack Cabin With This Company A Frame House Plans Tiny House Design Tiny House Cabin" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLO9IsjH2ysOJysgm7KBil3nonXhG1mMdJ8UVX0PEClOrrhLBUb6WCjvoX3LdoCI_JmAg';">
+        <figcaption>Build Your Own Beautiful And Sleek Flat Pack Cabin With This Company A Frame House Plans Tiny House Design Tiny House Cabin from nl.pinterest.com</figcaption>
+    </figure>
+        <p>
+        You will need the help of friends or employees to help you build a large framed greenhouse. Theres no way I could build a traditional home of that size for that price he says. 8102020 First build your base to your desired size and ensure square and treat if not using pressure treated timber.
+    </p>
+    <h3>8102020 First build your base to your desired size and ensure square and treat if not using pressure treated timber.</h3>
+    <p>10172019 How long did the build take. You will need the help of friends or employees to help you build a large framed greenhouse. Which is about 106 per square foot as the cabin is basically a 10x10 box. If you a-frame could practically roll on wheels take an afternoon to see where screws and nails could help provide you with much needed storage.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Build An A Frame Mother Earth News A Frame Cabin Plans A Frame House Plans A Frame House" src="https://i.pinimg.com/originals/ae/1d/2a/ae1d2ab9c888161cb3d0893c69724347.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHZ-YQP-T6lARuA_egxpMs4ZzyqP2lXctvZB7GjtHwEXz9K1Y4yinSEsVw-yU9BebZmOk';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>It is a good idea to get a preliminary permission BEFORE you make any other move.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On A Frame" src="https://i.pinimg.com/originals/f7/a3/2a/f7a32ac0df8e02cf5c34f9cddb3c63de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTaFJjK7VSG3E5KPF9wj4XehKfWOS0thHN73HAZtonR_zjbZSQ6zeq9Bqk_-iKVtNRarE';" />
+        <small>Source: ar.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Building your own home can be one of the most rewarding and the most stressful things you will ever do in your life.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30 Free Cabin Plans For Diy Ers Budget101 Com A Frame Cabin Plans Cabin Plans A Frame House" src="https://i.pinimg.com/600x315/b0/8b/92/b08b92f85e5d625614d43d8380a0b8f5.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTknXkhGudhF3S789YafJkXfkY8VlbYJVErNYJdax0Q3iamqzjwysZN4Jp50cDw6W0krKY';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>This kit of sorts allows you to construct your new homes interior and exterior walls.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Build Your Own 24 39 X 21 39 A Frame 2 Story Cabin Diy Plans Fun To Build Save Dolar A Frame Cabin Plans A Frame House Guest House Shed" src="https://i.pinimg.com/originals/3c/5b/08/3c5b084cc8d43180a94c671d021ab58b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvCCRnT9oqb3dGEsaFouMdxnn48W36zBiknmBM1V1Vz0Fp6xaWAWW6cd9R47BLJXsveuA';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Place studs around window and doors.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Build Or Diy Your Own A Frame A Frame Cabin Plans A Frame House A Frame House Plans" src="https://i.pinimg.com/564x/a5/39/63/a539632493c812eef83c48c8e4abdffb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMlLMn9QFuC94mo-XAnU1kMFA6YFb5uospOIw1N5z07HIMzF0RzCB9NnliKgLiZyU3jo';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The majority of self builders choose to be much more involved in the creative process taking part in the design stages choosing tradespeople and deciding on finishing touches.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="I Ll Take The A Frame Sfgirlbybay Diy Tiny House Plans A Frame Cabin A Frame House" src="https://i.pinimg.com/originals/07/9d/43/079d4332b387f3c6ec70f258a96babee.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPRfTzB3IfhB0wr050aUS0lLI1cEyq3E4MKJk7-holMEh7ki4zDItFb0iCqrTDaLYsauQ';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The majority of self builders choose to be much more involved in the creative process taking part in the design stages choosing tradespeople and deciding on finishing touches.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Frame 59 Jpg Image A Frame House Tiny House Cabin A Frame House Plans" src="https://i.pinimg.com/originals/47/8c/f8/478cf841fca61004322e04edd56be082.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQL7Xa9KsfHrONzniF2vWEmpE-X6qSIPX4shiQ8Hrr92sYSXsxAGbIpzbXxLrqPe6yWfo';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>See the full post for imagery.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Frame House From The 1960s A Frame House Small House House Illustration" src="https://i.pinimg.com/600x315/5a/62/76/5a6276fe6b34b799dd7fb1c4b60168db.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4cVIbcfZ_8UGguoXXklS4Uzj1KUn_cCcqU0RZMR7eGBH9izW58EriLNrPvNrGhHcfvBk';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>A rigid frame post and rafter or A-frame greenhouse will need a foundation and a sturdy frame.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Obraznyj Dom Casaspequenas Exterior House Siding Forest House A Frame House" src="https://i.pinimg.com/736x/0c/9e/26/0c9e263955a1a039bdf003fd9c384a7b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYEQJItCXwWo-vB-AtAUo2RiCsgM8z74LH15KXXicMEmkPZ8tt2UhFWREjrGBY4rG6_OQ';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Timber Frame Ltd are well placed to guide you through the options available for heating and renewable technologies to meet the strict requirements of the current regulations.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/simple-home-design-inside-style.html"><i>&larr; simple home design inside style</i></a>
+                                                                    
+                                        <a href="/simple-home-plans-to-build.html"><i>simple home plans to build &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

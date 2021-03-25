@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Growing Zones
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Growing Zones",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/originals/41/38/cb/4138cbf5f786811b3e4d73c09758cb58.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=growing+zones",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Growing Zones
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Growing Zones</strong>. 6182014 View our USDA plant hardiness zone map and find your zone. 242021 Below is the USDA planting zones map also known as the USDA Hardiness Zone map.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/41/38/cb/4138cbf5f786811b3e4d73c09758cb58.jpg" alt="World Hardiness Zone Maps Trace Zone 6 With Your Fingertip Our Challenge In Sustaina Plant Hardiness Zone Map When To Plant Vegetables Plant Hardiness Zone" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLUBzZfr7RenTJFfa8Et92flyXuQUnWTuTvxkDVvp8ewRmdNH5ReU-i_0PRmKVQ1sj14Y';">
+        <figcaption>World Hardiness Zone Maps Trace Zone 6 With Your Fingertip Our Challenge In Sustaina Plant Hardiness Zone Map When To Plant Vegetables Plant Hardiness Zone from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        When the mouse is over a tile the fertility rate is shown at the bottom left of the screen. Planting zones or growing zones are illustrated on a map known as the USDA Plant Hardiness Zone Map. The USDA Hardiness Zone Map divides North America into 11 separate planting zones.
+    </p>
+    <h3>The US Department of Agriculture divided out the map of the US in areas which range from planting zone 1A to planting zone 13B.</h3>
+    <p>Sunsets Garden Climate Zones - See Zone List Go to Hardiness Zone Map. Each of the zones is further divided into an A and a B The current map shows the winter low temp for growing zones starting in zone 1A at -60F and up to 70F for zone 13B. This is my favorite Climate Zone Map for tomato gardeners. Length of growing season timing and amount of rainfall winter lows summer highs.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Find Your Usda Growing Zone By Region Growing Zones Map Plant Hardiness Zone Map Usda Zone Map" src="https://i.pinimg.com/originals/82/70/96/827096f973e48fc27018a3f52901f0cc.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1lqSwssC7hK6QawoKJMZCTNQymVGs3IhSsqJAQy_LWn7EzxPvK0wxlY4WiSN9yImeU0';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The USDA map is separated into 13 growing zones.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Find U S Growing Zones On The Usda Planting Zone Map Planting Zones Map Plant Hardiness Zone Map Plant Zones" src="https://i.pinimg.com/originals/45/9a/97/459a97ab5707e831c1f344a3092e1d95.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCbC6_bLkwRNJkJYlnMaQyZRLjYKoKrAKswYLSqc1isaaHAKWmpZJfIw9jokYAIUwSQWg';" />
+        <small>Source: br.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The accuracy of zone coding can be substantially distorted by a lack of water.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="World Growing Zone Map Plant Hardiness Zone Growing Zones Map Plum Varieties" src="https://i.pinimg.com/originals/22/f5/fc/22f5fc1d9b05e52f9ae47a7d03147a3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3ICa8tbQFjBvAe1VpJG628dPWNQWl7dVzrrk8m917zwrup6Lv-1oJpmE2WvrW2QjLYw';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Department of Agriculture maintains the USDA Plant Hardiness Zone Map which allows gardeners and farmers to determine which plants are likely to flourish throughout specific regions of the United States.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tree Growing Zones Tree Hardiness Zones Tree Planting Zones Plant Hardiness Zone Plant Hardiness Zone Map Elderberry" src="https://i.pinimg.com/originals/05/56/09/055609246f140ce4c878b02fb5925adf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROaMNhevic5ettvecTl5baTfWszjr3ZhWxln6ZPXD0eXEZHcQ_OyqHYwAz5Yj9VBPj9wg';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>These are areas which range in minimum temperatures from -60 degrees Fahrenheit to 70 degrees Fahrenheit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="National Gardening Association Gardening Zones Gardening Zone Map Plant Zones" src="https://i.pinimg.com/originals/f1/f9/cd/f1f9cdf8a3f72e0a63df494037ef4cec.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu_IX8RQ8YtszEk3PI-yzOHoq7umZ6ZHuLiw-Z2YVgbDIUpzxAU_2H5JJjJuriMo8vp4o';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Growing zones for each state click on the state you live in in the list located below this map.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Weather Map Of Usa Italy Is Aprox 4 Plant Zones Usda Zones Planting Calendar" src="https://i.pinimg.com/originals/ac/32/26/ac32268d3dc5ea85eedaf00148c165f2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMHEMMnJ1Odh08iA2lNcn4xRAvrUObLFbaom6BFJ4UKZYXz-dSb8MHQzbEqwwQRcrHDI';" />
+        <small>Source: id.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>You can also contact your state agricultural college for updated info on state wide hardiness zones.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Russia Hardiness Map Plant Hardiness Zone Map Plant Hardiness Zone Plant Zones" src="https://i.pinimg.com/600x315/1c/cc/b6/1cccb6b097502e127772b6d404e7aca8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMxdKSHVAryVmynMODvcSp5fcDa3SFSzpV9gnC8gwvhpxNPxyUPqpMy4Xv3cerk_sJkQ';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Learn more about tree growing zones and how they effect the plants you can use in your garden.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Hardiness Zones And Succulents Planting Zones Map Gardening Zone Map Growing Zones Map" src="https://i.pinimg.com/originals/c2/59/94/c2599494e5c909a55931b46a884aa2bf.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP3KL4R-rrmSHq6_eRBjhGYILBm830Tf_nKBO00oKHHelbLZbPMbGO8UaW8WMZCq4TA54';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Answering the question How do I go about finding my hardiness zone is as easy as locating where you live on the map.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="When Can I Plant Nasturtiums Gardening Zones Planting Zones Map Garden" src="https://i.pinimg.com/originals/82/22/11/822211cae45eafa5a7be1bcbb0e37169.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReX6pWmXIYjm3ySwXSv7JH3ng19wtfzoG-V51bNczVdbyXbeoYlZMESaV07k9EI1z_gkQ';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Each growing zone is 10F warmer or colder in an average winter than the adjacent zone.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/home-design-studio-pro.html"><i>&larr; home design studio pro</i></a>
+                                                                    
+                                        <a href="/home-design-studio-pro-15-mac.html"><i>home design studio pro 15 mac &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

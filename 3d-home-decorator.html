@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        3d Home Decorator
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "3d Home Decorator",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/originals/ea/b1/75/eab1758ea8e0ea104f68b587ef5c258c.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=3d+home+decorator",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            3d Home Decorator
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>3d Home Decorator</strong>. This model is accurately sized to match the real object. 10172020 Interior Design 3D is a convenient program for 3D home design and floor plan creation.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/72/20/c0/7220c048efff50c4af99af64ff738840.jpg" alt="New House Model Interior Furniture Scene 3d Model Max Apartment Interior Decorating Model Home Furnishings Home Interior Design" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTopNwKfnk7Q3ebyEPw6ZBjOHoxt5BgWR8NsnifagVZg2SyeD-hGczsGLGzNjqO7E_Mn98';">
+        <figcaption>New House Model Interior Furniture Scene 3d Model Max Apartment Interior Decorating Model Home Furnishings Home Interior Design from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Free and easy-to-use program. Incredible free interior design software. Create your dream home.
+    </p>
+    <h3>Sweet Home 3D is an interior design application that helps you to quickly draw the floor plan of your house arrange furniture on it and visit the results in 3D.</h3>
+    <p>Equip each room in your house or apartment. Free Home Decor 3D models for download files in 3ds max c4d maya blend obj fbx with low poly animated rigged game and VR options. Get a good idea of your next home or simply have fun. Design any room of your home including kitchen bathroom bedrooms home office or go all out and design your entire home.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Apartment Designs Shown With Rendered 3d Floor Plans Online Home Design Home Design Plans House Design" src="https://i.pinimg.com/originals/c1/42/82/c14282f21fad7e0638f57bfc5bdfc9de.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX11dvCkD85qBLtjQWi3V2KRh44xS0GOgcUJxJBxUEWFnKb1Hca3I97M1CpSDHW900dh8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>The SweetHome3D section contains the installers of Sweet Home 3D for all the supported operating systems and all the released versions up to the current version 65.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Home Decorator A Free Home Interior Design Site With Interior Design Home Interior Design Interior Design Sites" src="https://i.pinimg.com/originals/45/09/76/4509765f42b84097114039b7d52192cd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpNEOJUiARg-fQdXlV5XrPwTBBe1H7pcYCRnhIx6zn9VswRR1an4-xzVso4hHySRQQFUM';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Live Home 3D is multi-platform home design software that helps anyone create detailed floor plans and 3D renderings.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Floor Plans And Interior Design Interior Design Programs Interior Design Tools Home Design Software" src="https://i.pinimg.com/600x315/c9/69/ef/c969ef25dfdbadd0b49b069c65c85ba9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbK-mZvSrUgMbcnO7YsPz5dqUppLzTQcowN2_n4AM2Ku-FjFAngPJNGynXClQP3P_2N6s';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Youre going to love designing your home.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Autodesk Dragonfly Online 3d Home Design Software Digital Inspiration 3d Home Design Software Room Layout Planner Home Design Software" src="https://i.pinimg.com/600x315/c9/35/7a/c9357abd81568f941a6fb1dce4f2aee8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCzfk52OQ5X8Gq15j2xHNb0BTm89_NZps6bOJxaS5FrqgvbW9eb4OL4EQf6loq9uN-zGs';" />
+        <small>Source: in.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Free and easy-to-use program.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Interior Scene File 3dsmax Bedroom 168 By Anhtuan Free Download Bedroom Interior Interior Bedroom Scene" src="https://i.pinimg.com/originals/e7/ac/b8/e7acb8f92043f1e6b9bd3ac23859d830.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-U5r8DOkTxWtSD3tI4-PGcon1Y7f2hGOht9XYeTjUb3vAa-3ALoCLocIyol1B5u11L8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>10172020 Interior Design 3D is a convenient program for 3D home design and floor plan creation.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Four Ways To Better Interior Design Installations Home Design Software Interior Design Software Floor Plan Design" src="https://i.pinimg.com/originals/de/bd/07/debd07513b95d34c402138886df7332f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gQpi_CD-pNERIpLzwyzsibzjagWeB_NPCPSjt8NG36hwfT1Lpq7g98pqfr-EICOmS2w';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Anyone can create photorealistic 3D renders of the interiors they have designed.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Interior Render The Standard Furniture Arrangement Interior Interior Design" src="https://i.pinimg.com/originals/0c/2f/37/0c2f378998e65d6af593d23a3969a907.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTExZwx-QbBQUJqK4Go7Ikyz4u2WJABkRtEs0nm2f368mXOFLvOZoStkPb6OAufT_1jRmU';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Accessible to everyone from home decor enthusiasts to students and professionals Home Design 3D is the reference interior design application for a.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Visualisierung Und Design House Furniture Design House Designs Exterior House Plans Australia" src="https://i.pinimg.com/originals/04/c3/a5/04c3a567fc2ccbd22affea161e492a05.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz16BwIbeDHeUmbu1AVx2ZWfsNgQNDpMp3L7relnFBnR1DBUddbZwYw4sj-mgGJkSKxuU';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Incredible free interior design software.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Office Design 35 Fantastic 3d Office Design Software Picture Concept The Cool Design Your O Two Bedroom House Design House Designs Exterior Bedroom House Plans" src="https://i.pinimg.com/originals/45/a2/83/45a283751a264f13cd1675629f81b794.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAyQzJVnubPFfg_wA3drIMRxUmhpIgiEkGM1T3aB8LpMaPL9ZCjWcb5vdNYVBEIyzWqk';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Live Home 3D is multi-platform home design software that helps anyone create detailed floor plans and 3D renderings.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/homes-with-floor-plans.html"><i>&larr; homes with floor plans</i></a>
+                                                                    
+                                        <a href="/hottest-home-design-trends.html"><i>hottest home design trends &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

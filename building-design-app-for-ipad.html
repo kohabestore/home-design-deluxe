@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Building Design App For Ipad
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Building Design App For Ipad",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/736x/5a/5e/79/5a5e7938b0bd682954075066327cfe18.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=building+design+app+for+ipad",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Building Design App For Ipad
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Building Design App For Ipad</strong>. Ad Search Building Design App. Shapr3D is a 3D CAD tool for iPad Pro.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/75/7e/02/757e0242c6d1f88cbb76b973e806b39f.png" alt="Office Map Png By Mike Tran Mobile App Design Business Design Mobile Design Inspiration" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXlRECnxxARWZN79dVMQZerHx71kgjU_O0sIk-tYoE4T7MT86inxVxuwOlkK6Gr56itag';">
+        <figcaption>Office Map Png By Mike Tran Mobile App Design Business Design Mobile Design Inspiration from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        4132020 Procreate is a highly popular creativity app which is great for both professionals and beginners. Ad Building A App - This Is What Youre Searching For. In a high detailed 3D or in an awesome 2D view quickly draw furnish and paint what else could be easier on our 3d home design software for ipad and iphone.
+    </p>
+    <h3>1999 1999 at time of writing with 50 per cent off Affinity Designer is one of the most ambitious creative apps for the iPad.</h3>
+    <p>Ad Find Ipad App Design and Informative Content. But it is free only for 7 days after that you need to buy it. Ad Building A App - This Is What Youre Searching For. 1999 1999 at time of writing with 50 per cent off Affinity Designer is one of the most ambitious creative apps for the iPad.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Procreate App Architectural Drawing Tips Quick Menu Streamline Youtube Procreate App Architecture Drawing Architect Jobs" src="https://i.pinimg.com/originals/14/fe/65/14fe6532fb32388af60f422427529753.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgwwjirowzB-oKnB7WlknEveJwpNsQnlir13eg0YR-a4QY1v6PZ9_shas5898A1OHZk_A';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>IOS 12 or later.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Watch Architect Use Procreate App Ipad Pro To Turn Sketchup Views Into Hand Renderings Youtube Ipad Pro Interior Design Sketch App Design" src="https://i.pinimg.com/originals/15/bd/6e/15bd6ebe562a63a407f5dc017666850e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBbZAIqpDq1UIrmLd8x9_Eqk-4MIqJsxLpL30hCx6L4EfDH5J48H8lCtIsAlxF6SuNazg';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Ad Find Ipad App Design and Informative Content.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Today Morpholio Has Unveiled A New Addition To Their Flagship Trace App The New Addition Called Simply Stencil Offe Stencil App App Design Ipad Trace App" src="https://i.pinimg.com/originals/53/60/43/53604351fb1191f8792c84381dd07cd1.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoBqIyfRgEavxk9QFtAOqhhaKYifX3jjuzr4C0qEOS5iJ9s45a-OWhYLfKgB_0nUI2Ar8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>In just a few taps users can create beautiful designs by snapping rhombuses together on an isometric grid.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="2020 Best 3d Design Apps For 3d Modeling Ipad Android All3dp 3d Drawings 3d Drawing App Digital Painting App" src="https://i.pinimg.com/originals/9a/3b/8d/9a3b8d30b6faa2a8fd3215b0b26500d3.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS4E-DKwO16Wjx-x09XIb80oe1a7bOzqA1onitU2xO8ZH_ttBBVUwDgg9xK_vX188prPo';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>To make your work simpler you can use layers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Autodesk Formit Ipad App Autodesk Ipad Apps Tool Design" src="https://i.pinimg.com/600x315/5e/c6/66/5ec6666383b242d7d0f9945b8c1f37f7.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdYcrxGn9lG0lTgTHvm7OHDOwx0e7Pfzzl-vdkwnrLkb51s1cN_twErdxu9l4ATmtaKIo';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Shapr3D is a 3D CAD tool for iPad Pro.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="3d Architectural Design Concept On The Ipad Using Umake Youtube In 2020 Architecture Design Concept Concept Design Concept Architecture" src="https://i.pinimg.com/originals/7d/0c/2b/7d0c2bea23be3400832026ceb6dc444c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNb_OkQY-_4A0UK7w6oa64nTmLBr-j86aReo2cQDNEi3PmzNZZ9B5oQD4hWuWn-K2wblQ';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Accessible to everyone Home Design 3D is the reference interior design application for a professional result at your fingertips.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Formit 360 For Ipad Pro And Apple Pencil Youtube Apple Pencil Ipad Pro Apps Ipad Pro" src="https://i.pinimg.com/originals/89/ad/4a/89ad4a7192b91d0fc17f36e3fb364c1f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdjvZu4xOYgtm7qDb92mgBYntfGMFHMcqjS-z3Gl4ZNEEMP3d7Z5g6xGq4ufI9H2s6Qtk';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>It enables its users to draw sketches fast and easy then turns them instantaneously into 3D forms.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Save Time My New Fav 3d App Interior Design For Ipad Interior Design Apps Best Interior Design Apps Architecture Design" src="https://i.pinimg.com/originals/87/de/dd/87dedde98f175769e52f1fe3ca5ac462.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL69V29J48yWr2vTOqxmFzi6lLoGHb1FTgHv-2MbXEPdTve8bQhlaaf-0urM7uu8ubfwQ';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>7102020 Wix doesnt show iPad screenshots in the app store preview but it is perfectly compatible with iPad.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="See Industrial Designer Lasse Pekkala Design A Beach House Using Shapr3d And Concepts Concept Architecture Concept App Design" src="https://i.pinimg.com/originals/c2/c9/be/c2c9be82c8e9b1867dda31d471f1c16d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOR4wIxktNRPTkxmcW5taJu_2hiOkLkv5LHgt85WYuL1pBa5yCiZziwrd0T5KA1Fxvgn8';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Get Results from 6 Engines at Once.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/bohemian-home-decor-ideas.html"><i>&larr; bohemian home decor ideas</i></a>
+                                                                    
+                                        <a href="/bookshelf-design-for-home.html"><i>bookshelf design for home &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

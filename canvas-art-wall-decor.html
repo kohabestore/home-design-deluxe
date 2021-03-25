@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Canvas Art Wall Decor
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}.btn{display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;border-top-color:transparent;border-right-color:transparent;border-bottom-color:transparent;border-left-color:transparent;padding:.375rem .75rem;margin:0.5rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545}.btn-success{color:#fff;background-color:#28a745;border-color:#28a745}.btn-group-sm>.btn,.btn-sm{padding:.25rem .5rem;font-size:.875rem;line-height:1.5;border-radius:.2rem}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Admin"
+  },
+  "headline": "Canvas Art Wall Decor",
+  "datePublished": "2021-03-25",
+  "image": "https://i.pinimg.com/originals/ad/05/0c/ad050c28e3fc72608531a6a4738d0608.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Home Design Deluxe",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=canvas+art+wall+decor",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Canvas Art Wall Decor
+            </a>
+        </h1>
+        <p>
+                            Best Wallpaper Ideas Home Design Deluxe website. Search anything about Wallpaper Ideas in this website.
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Canvas Art Wall Decor</strong>. Canvas Prints Photo To Canvas Family Photos Wedding Pictures Custom Canvas Wall Decor Canvas Wall Art Photography Print Photo Canvas CreateYourOwnGift. Get wall art youll love printed on high-quality canvas prints framed art prints poster prints and more in custom sizes that ship fast.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/18/fe/b1/18feb165e115fb5c84c08b18559e4740.jpg" alt="Black White Time To Travel Quotes Minimalist Nordic Posters And Prints Wall Art Canvas Painting Wall Pictures Kids Room Decor Travel Wall Decor White Wall Decor Wall Art Canvas Painting" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3hPc5019E1MtU6JB0CK58JTfh-pkMwzc9NHQ04FYN3nch4MGrb-yLPVrbeUoBZnkX3Ls';">
+        <figcaption>Black White Time To Travel Quotes Minimalist Nordic Posters And Prints Wall Art Canvas Painting Wall Pictures Kids Room Decor Travel Wall Decor White Wall Decor Wall Art Canvas Painting from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Personalized When We Have Each Other Canvas Wall Art Infinity Love Romantic Wall Art Anniversary Gift Couples Gift Wedding Gift Canvas Regular price 3495. Buy top selling products like Indigo Field Canvas Wall Art and Carol Robinson Abstract Lapis Light Canvas Wall Art. With thousands of canvas and framed art prints to choose from youre bound to find the perfect affordable art for your space online at iCanvas.
+    </p>
+    <h3>1132020 35 DIY Canvas Wall Art Ideas DIY Canvas Tutorials.</h3>
+    <p>Decorate your home with an elegant and unique style find your greatest inspiration in the decor of wall art. With thousands of canvas and framed art prints to choose from youre bound to find the perfect affordable art for your space online at iCanvas. Deer Wall Art Canvas Art Wall Decor for Bedroom Wildlife Cabin Deer Pictures Artwork Country Canvas Prints Wall Decorations for Home Decor Size 12x16 Each Panel Easy to Hang. Buy top selling products like Indigo Field Canvas Wall Art and Carol Robinson Abstract Lapis Light Canvas Wall Art.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Gold Art Abstract Painting Original Acrylic Canvas Wall Art Etsy Abstract Canvas Painting Wall Art Pictures Canvas Wall Art" src="https://i.pinimg.com/originals/5f/da/92/5fda92cd894839cc02d578cdf05a5197.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1RjAgdHXjDnoMKHHJKqZs3j9l7q2RiMntQDEQxEjAFNlPRebDTHUbQEFJHgpfd0Bfs6Y';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Wall art for bedroom Simple Life Black and white paintings Canvas Wall Art Decor Hang Pictures 3 Pieces Framed Canvas Prints Watercolor Giclee with Black Border Ready to Hang for Home Decoration.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="4 Panel Modern Wall Art Home Decoration Painting Canvas Wall Art Prints Pictures Sea Scenery With Beach Unframed Home Decor Apartment Decor Beach Canvas Art" src="https://i.pinimg.com/originals/3d/1d/e5/3d1de5ad887a9bf6aca4415b5e618e58.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwPUxACr4AahIhkdU9_jiwAPBf_fhhoJC2yKqX8QOL8BUBvU7BoKW7FqDip_kTJDHkPU';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Get it as soon as Mon Mar 1.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Decor Paintings Canvas Wall Art Decor For Bedroom 3 Panels Yellow And Blue Canvas Prints Framed For Framed Canvas Wall Art Wall Art Pictures Framed Canvas Art" src="https://i.pinimg.com/564x/3b/31/2a/3b312abcc03f0cbaf28176b91aea9e72.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTji3AZqFt8N3rV0TgXmZVk183zHZxLo6qYjXNuPvQNHG2se-FHcof54-Kd9o_XA6F02ig';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Get it as soon as Mon Mar 15.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ideas Of Wisdom Addyzeal Butterfly Wall Art Canvas Art Wall Decor Canvas Wall Art" src="https://i.pinimg.com/originals/e2/c9/d0/e2c9d05c90a2de26b94f40f1852eaa8b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTya8S7mt3iz5iLF8FTnP3kOSIJx0IabwxvMKqvc4s6fn_-QnFIxJ9tEIKjvIsTB9M8mjo';" />
+        <small>Source: nl.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Shop for canvas art wall decor at Bed Bath.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cherry Blossom Japan Nature 5 Panel Canvas Art Wall Decor Flower Canvas Wall Art Canvas Art Wall Decor Canvas Wall Art" src="https://i.pinimg.com/originals/0b/34/ed/0b34edc774344bac4e53e876b93c1a12.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVaPNsgC2iYhrdZ0Z9tNMA1UW3aXR_xgAHpF051Cw3abTkbIKXIsSBeaBtzUUhcFpaEgY';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Sit back and start pinning because there are a TON of great adult craft DIY canvas wall art ideas here for everyones style.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Home Decor Canvas Painting Modern Bamboo Flowers Wall Pictures For Living Room Canvas Prints Wall Decor Living Room Canvas Prints Living Room Prints Wall Decor" src="https://i.pinimg.com/originals/36/f9/2e/36f92e66005dc1f094c56237be553a67.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIfzYCvNMJcdHyXovLTjWGh_sPjkgwezt09Ba1FYS-ZP8XMgcvFP3a7roUHOLB7FYzKE0';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Use the canvas photo spread design to creatively showcase your photo or create a gallery wall with different size canvas prints.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modern Golden Butterfly And Wings Canvas Painting Wall Decor Abstract Wall Art Wall Art Pictures Modern Wall Art" src="https://i.pinimg.com/originals/9b/d0/be/9bd0bea7ad0f6e472c8367d26a8035ba.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCJq42hmCxyytGMmEY61PbnXAo6p0yJ2fuaNn46gns40ss0D9NmHNDYMY85Xox75rt24';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Decorate your home with an elegant and unique style find your greatest inspiration in the decor of wall art.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Living Room Kitchen Wall Art Poster Abstract Geometry Canvas Painting Yellow Grey Pictures Modern Scandinavian Home Decor Prints Canvas Wall Art Photo Canvas Art Wall Art Canvas Prints" src="https://i.pinimg.com/originals/4d/39/87/4d398704f5479a6c9fd8db6d734efb76.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2d4JPlv83VZq3_JMfLhBBrUfTby1R0JbxsrI0hW30cFK9kXbH5ND91Q81Gr1RUrNRvA';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Find the perfect decorative accents at Hayneedle where you can buy online while you explore our room designs and curated looks for tips ideas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Make Large Canvas Wall Art For 14 Large Canvas Wall Art Canvas Art Wall Decor Large Wall Art" src="https://i.pinimg.com/originals/50/37/9a/50379a4dc63e879311699168e0752e3b.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1y2hDYRCYmMmj3SICbExZbB5DdnNwzrQIV4BYweU8sUljhsF4HVXTG8hUiNpKduor5IM';" />
+        <small>Source: www.pinterest.com</small>
+                        <center>
+                <button class="btn btn-sm btn-success ads-img">Check Details</button>
+            </center>
+                    <p>Get it as soon as Mon Mar 15.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/exterior-home-decoration.html"><i>&larr; exterior home decoration</i></a>
+                                                                    
+                                        <a href="/exterior-home-makeover-ideas.html"><i>exterior home makeover ideas &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('body').addClass('xepo_ads');
+	});
+
+	$(document).on('click','.xepo_ads',function(e)
+	{
+	    $(this).removeClass('xepo_ads');
+	    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+	});
+</script>            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open('https://g9qnk89pd5ic.com/im1fz0vxa?key=1dfa45fe59822be90c22766e7f654efd', '_blank');
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
